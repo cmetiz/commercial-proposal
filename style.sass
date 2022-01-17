@@ -70,7 +70,18 @@ main
             max-width: 200px
             margin: auto
             padding-top: 20px
-
+    &-list
+        margin-top: 20px
+        padding: 10px
+        border-top: 1px dashed red
+        border-bottom: 1px dashed red
+        background-color: #eee
+        a
+            color: red
+        li
+            margin-bottom: 10px
+        a
+            margin-left: 10px
     .buy
         max-width: 250px
         margin: auto
@@ -99,8 +110,20 @@ footer
     padding: 20px 50px
     margin-top: 50px
     color: #fff
+    transition: .2s
 .block
     padding: 0 20px
+@media(hover: hover) and (pointer: fine)
+    .products
+        &-list
+            a:hover
+                text-decoration: underline
+    .buy:hover
+        background-color: darken(red, 20%)
+    header
+        a:hover
+            text-decoration: underline
+    
 @media (max-width: 1250px)
     .container
         padding: 20px
