@@ -25,7 +25,6 @@ header {
           align-items: center;
   padding: 20px;
   text-align: center;
-  position: fixed;
   width: 100%;
   background-color: #fff;
   border-bottom: 3px solid red;
@@ -87,13 +86,35 @@ h1 {
   font-size: 20px;
 }
 
+.map {
+  opacity: 1;
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+  border: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.map.active {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.map-show {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -236,9 +257,6 @@ footer ul {
 }
 
 @media (max-width: 1050px) {
-  main {
-    padding-top: 150px;
-  }
   header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -260,9 +278,6 @@ footer ul {
 }
 
 @media (max-width: 800px) {
-  main {
-    padding-top: 200px;
-  }
   header .block {
     display: -webkit-box;
     display: -ms-flexbox;

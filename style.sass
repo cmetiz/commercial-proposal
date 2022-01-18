@@ -12,7 +12,7 @@ header
     align-items: center
     padding: 20px
     text-align: center
-    position: fixed
+    // position: fixed
     width: 100%
     background-color: #fff
     border-bottom: 3px solid red
@@ -41,12 +41,28 @@ header
         margin-right: 10px
 h1
     font-size: 20px
+.map
+    opacity: 1
+    height: 400px
+    width: 100%
+    margin-top: 20px
+    border: 0
+    transition: .2s
+    &.active
+        // display: none
+        height: 0
+        visibility: hidden
+        opacity: 0
+    &-show
+        font-weight: bold
+        text-decoration: underline
+        cursor: pointer
 .container
     max-width: 1200px
     margin: auto
     
 main
-    padding-top: 100px
+    padding-top: 20px
     text-align: center
 .products
     display: flex
@@ -130,7 +146,7 @@ footer
         max-width: 800px
 @media (max-width: 1050px)
     main
-        padding-top: 150px
+        // padding-top: 150px
     header
         flex-wrap: wrap
         .block
@@ -144,7 +160,7 @@ footer
             display: flex
 @media (max-width: 800px)
     main
-        padding-top: 200px
+        // padding-top: 200px
     header
         .block
             display: flex
