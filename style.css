@@ -25,6 +25,7 @@ header {
           align-items: center;
   padding: 20px;
   text-align: center;
+  position: fixed;
   width: 100%;
   background-color: #fff;
   border-bottom: 3px solid red;
@@ -114,7 +115,7 @@ h1 {
 }
 
 main {
-  padding-top: 20px;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -257,6 +258,9 @@ footer ul {
 }
 
 @media (max-width: 1050px) {
+  main {
+    padding-top: 150px;
+  }
   header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -278,6 +282,9 @@ footer ul {
 }
 
 @media (max-width: 800px) {
+  main {
+    padding-top: 200px;
+  }
   header .block {
     display: -webkit-box;
     display: -ms-flexbox;
