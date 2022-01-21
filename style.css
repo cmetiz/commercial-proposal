@@ -161,14 +161,6 @@ main {
   padding-top: 20px;
 }
 
-.products-list {
-  padding: 10px;
-  margin-top: 20px;
-  border-top: 1px dashed red;
-  border-bottom: 1px dashed red;
-  background-color: #eee;
-}
-
 .products-list a {
   color: red;
 }
