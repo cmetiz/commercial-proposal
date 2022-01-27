@@ -1,3 +1,4 @@
+$red: darken(red, 10%)
 *
     box-sizing: border-box
 body
@@ -25,6 +26,8 @@ header
     img
         margin-right: 10px
         border-radius: 50%
+        width: 50px
+        height: 50px
 .name
     display: flex
     flex-direction: column
@@ -93,7 +96,7 @@ main
         // border-bottom: 1px dashed red
         // background-color: #eee
         a
-            color: red
+            color: $red
         li
             margin-bottom: 10px
         a
@@ -122,7 +125,7 @@ footer
 .buy
     display: flex
     justify-content: center
-    background-color: red
+    background-color: $red
     padding: 20px 50px
     margin-top: 50px
     color: #fff
@@ -185,3 +188,4 @@ footer
     .author
         img
             max-width: 30px
+            max-height: 30px
