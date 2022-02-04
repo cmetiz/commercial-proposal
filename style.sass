@@ -20,6 +20,27 @@ header
     z-index: 999
     a
         color: #000
+.buy-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    font-size: 12px
+    // max-width: 320px
+    max-width: 800px
+    margin: auto
+    a
+        display: block
+        background: #eee
+        margin-bottom: 20px
+        padding-bottom: 10px
+        width: 100%
+        min-width: 320px
+        max-width: 320px
+        margin: 10px 5px
+    .buy
+        max-width: 320px
+        padding: 5px 10px
+        margin: 0 auto 10px
 .author
     display: flex
     align-items: center
@@ -147,7 +168,15 @@ footer
 .logo
     padding-top: 10px
     max-width: 100%
+.extra-products
+    margin-bottom: 20px
+    font-weight: bold
+    color: $red
+    cursor: pointer
 @media(hover: hover) and (pointer: fine)
+    .buy-list
+        a:hover .buy
+            background: darken(red, 20%)
     .products
         &-list
             a:hover
